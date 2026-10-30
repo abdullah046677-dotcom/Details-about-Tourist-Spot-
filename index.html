@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Travel & Heritage Guide</title>
+    <style>
+        :root {
+            --primary: #2c7a7b;
+            --secondary: #edf2f7;
+            --text: #2d3748;
+            --accent: #e2e8f0;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: var(--secondary); color: var(--text); }
+        header { background-color: var(--primary); color: #fff; padding: 2rem 1rem; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: center; background: #fff; padding: 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        nav a { color: var(--primary); font-weight: bold; padding: 0.5rem 1rem; text-decoration: none; margin: 0 5px; border-radius: 5px; transition: background 0.3s; }
+        nav a:hover { background-color: var(--accent); }
+        .container { padding: 20px; max-width: 1200px; margin: auto; }
+        section { margin-bottom: 40px; }
+        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 10px; color: var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .details { font-size: 0.95rem; line-height: 1.6; }
+        .location-link { display: inline-block; margin-top: 10px; padding: 8px 15px; background-color: var(--primary); color: #fff; border-radius: 6px; text-decoration: none; font-weight: bold; }
+        .location-link:hover { background-color: #1d5253; }
+        .info-tag { display: inline-block; background: var(--accent); padding: 4px 8px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explorer's Guide</h1>
+</header>
+
+<nav>
+    <a href="#places">Tourist Places</a>
+    <a href="#mosques">Famous Mosques</a>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#stay">Where to Stay</a>
+</nav>
+
+<div class="container">
+    
+    <section id="places">
+        <h2>Tourist Places</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="placeholder_place.jpg" alt="Beautiful Tourist Spot">
+                <div class="card-content">
+                    <span class="info-tag">Nature & History</span>
+                    <h3>Spot Name</h3>
+                    <div class="details">
+                        <p><strong>History:</strong> Detailed history goes here. Explain its significance and origin.</p>
+                        <p><strong>How to Reach:</strong> Bus routes, train stations, or driving directions.</p>
+                    </div>
+                    <a href="#" class="location-link">View on Map</a>
+                </div>
+            </div>
+            <!-- Add more place cards here -->
+        </div>
+    </section>
+
+    <section id="mosques">
+        <h2>Famous Mosques</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="placeholder_mosque.jpg" alt="Historic Mosque">
+                <div class="card-content">
+                    <span class="info-tag">Heritage</span>
+                    <h3>Mosque Name</h3>
+                    <div class="details">
+                        <p><strong>History:</strong> Architectural style, construction period, and historical background.</p>
+                        <p><strong>Amenities:</strong> Prayer hall capacity, ablution areas, and visiting hours.</p>
+                    </div>
+                    <a href="#" class="location-link">View on Map</a>
+                </div>
+            </div>
+            <!-- Add more mosque cards here -->
+        </div>
+    </section>
+
+    <section id="restaurants">
+        <h2>Famous Restaurants</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="info-tag">Local Cuisine</span>
+                    <h3>Restaurant Name</h3>
+                    <div class="details">
+                        <p><strong>Specialty:</strong> Signature dishes and popular cuisine types.</p>
+                        <p><strong>Location Details:</strong> Situated near [Tourist Spot Name].</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more restaurant cards here -->
+        </div>
+    </section>
+
+    <section id="stay">
+        <h2>Where to Stay</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="info-tag">Accommodation</span>
+                    <h3>Hotel/Resort Name</h3>
+                    <div class="details">
+                        <p><strong>Room Types:</strong> Suites, family rooms, and pricing overview.</p>
+                        <p><strong>Services:</strong> Free Wi-Fi, breakfast included, laundry, and proximity to attractions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more stay cards here -->
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
